@@ -16,7 +16,7 @@ namespace rates
                 {
                     webBuilder
                         .UseStartup<Startup>()
-                        .UseUrls("http://*:10001");
+                        .UseUrls("http://*:10003");
                 });
     }
 }
