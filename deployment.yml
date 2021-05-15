@@ -24,7 +24,3 @@ spec:
           env:
             - name: ASPNETCORE_ENVIRONMENT
               value: "kubernetes"
-        - name: redis-server
-          image: redis
-          ports:
-            - containerPort: 6379
