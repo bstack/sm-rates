@@ -39,6 +39,7 @@ namespace rates.Controllers
             var _toCurrencyValue = decimal.Round(rateRequest.FromCurrencyValue * _ratesClientResponse.Result.Value * (1 + (_marginPercentage / 100M)), _exponent);
             var _toCurrencyMarginValue = decimal.Round(_toCurrencyValue * (_marginPercentage / 100M), _exponent);
 
+            // test
             var _rateResponse = new rates.Models.RateResponse(
                 rateRequest.FromCurrency,
                 rateRequest.FromCurrencyValue,
